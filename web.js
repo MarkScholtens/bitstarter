@@ -16,7 +16,7 @@ var getResponse = function() {
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World by bitstarter!');
+  response.send( getResponse() );
 });
 
 var port = process.env.PORT || 8080;
